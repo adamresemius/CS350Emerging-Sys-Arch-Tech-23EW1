@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configurations XML_version="1.2" id="configurations_0">
+    <configuration XML_version="1.2" id="Texas Instruments XDS110 USB Debug Probe_0">
+        <instance XML_version="1.2" desc="Texas Instruments XDS110 USB Debug Probe_0" href="connections/TIXDS110_Connection.xml" id="Texas Instruments XDS110 USB Debug Probe_0" xml="TIXDS110_Connection.xml" xmlpath="connections"/>
+        <connection XML_version="1.2" id="Texas Instruments XDS110 USB Debug Probe_0">
+            <instance XML_version="1.2" href="drivers/tixds510icepick_c.xml" id="drivers" xml="tixds510icepick_c.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds510cs_dap.xml" id="drivers" xml="tixds510cs_dap.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds510cortexM.xml" id="drivers" xml="tixds510cortexM.xml" xmlpath="drivers"/>
+            <platform XML_version="1.2" id="platform_0">
+                <instance XML_version="1.2" desc="CC3220S_0" href="devices/CC3220S.xml" id="CC3220S_0" xml="CC3220S.xml" xmlpath="devices"/>
+                <device HW_revision="1" XML_version="1.2" description="SimpleLink(TM) CC3220S wireless MCU" id="CC3220S_0" partnum="CC3220S">
+                    <router HW_revision="1.0" XML_version="1.2" description="ICEPick_C Router" id="IcePick_C_0" isa="ICEPICK_C">
+                        <subpath id="subpath_0">
+                            <router HW_revision="1.0" XML_version="1.2" description="CS_DAP Router" id="CS_DAP_0" isa="CS_DAP">
+                                <subpath id="subpath_1">
+                                    <cpu HW_revision="1.0" XML_version="1.2" desc="Cortex_M4_0" description="Cortex_M4 CPU" id="Cortex_M4_0" isa="CORTEX_M4_CC"/>
+                                </subpath>
+                            </router>
+                        </subpath>
+                    </router>
+                </device>
+            </platform>
+        </connection>
+    </configuration>
+</configurations>
